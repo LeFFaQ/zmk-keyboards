@@ -17,7 +17,7 @@
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         kscan = <&kscan_sofle>; // Label of the kscan node, optional if all layouts use the same
-        transform = <&default_sofle_transform>; // Label of the matrix transform for this layout
+        transform = <&default_transform_sofle>; // Label of the matrix transform for this layout
     };
 
     default_transform_sofle: keymap_transform {
