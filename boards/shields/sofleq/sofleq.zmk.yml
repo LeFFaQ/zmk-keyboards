@@ -9,5 +9,5 @@ features:
   - keys
   - studio
 siblings:
-  - sofle_left
-  - sofle_right
+  - sofleq_left
+  - sofleq_right

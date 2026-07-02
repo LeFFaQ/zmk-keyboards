@@ -6,7 +6,7 @@
 
 #include "sofleq.dtsi"
 
-&kscan_sofle {
+&kscan_sofleq {
     col-gpios
         = <&gpio0 2 GPIO_ACTIVE_HIGH>
         , <&gpio1 15 GPIO_ACTIVE_HIGH>

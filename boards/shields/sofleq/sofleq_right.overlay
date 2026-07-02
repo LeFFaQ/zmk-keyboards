@@ -4,13 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "sofleq.dtsi"
+#include "sofleqq.dtsi"
 
-&default_transform_sofle {
+&default_transform_sofleq {
     col-offset = <6>;
 };
 
-&kscan_sofle {
+&kscan_sofleq {
     col-gpios
         = <&gpio0 9 GPIO_ACTIVE_HIGH>
         , <&gpio0 10 GPIO_ACTIVE_HIGH>

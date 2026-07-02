@@ -9,18 +9,18 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan_sofle;
-        zmk,physical-layout = &physical_layout_sofle;
+        zmk,kscan = &kscan_sofleq;
+        zmk,physical-layout = &physical_layout_sofleq;
     };
 
-    physical_layout_sofle: physical_layout { // First physical layout, use different naming for other layouts
+    physical_layout_sofleq: physical_layout { // First physical layout, use different naming for other layouts
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
-        kscan = <&kscan_sofle>; // Label of the kscan node, optional if all layouts use the same
-        transform = <&default_transform_sofle>; // Label of the matrix transform for this layout
+        kscan = <&kscan_sofleq>; // Label of the kscan node, optional if all layouts use the same
+        transform = <&default_transform_sofleq>; // Label of the matrix transform for this layout
     };
 
-    default_transform_sofle: keymap_transform {
+    default_transform_sofleq: keymap_transform {
         compatible = "zmk,matrix-transform";
         columns = <16>;
         rows = <4>;
@@ -38,7 +38,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         >;
     };
 
-    kscan_sofle: kscan {
+    kscan_sofleq: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         wakeup-source;
 
